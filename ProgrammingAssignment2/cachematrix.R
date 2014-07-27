@@ -8,7 +8,7 @@
 ## and getter functions for both matrix and inverse. Returns all four 
 ## functions stored in a list.
 makeCacheMatrix <- function(x = matrix()) {
-  inverse <- Null
+  inverse <- NULL
   ## Sets the matrix and resets inverse
   setMatrix <- function(aMatrix){
     x <<- aMatrix
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
     inverse <<- anInverse
   }
   getInverse <- function(){
-    anInverse
+    inverse
   }
   list(setMatrix = setMatrix, getMatrix = getMatrix,
        setInverse = setInverse, getInverse = getInverse )
